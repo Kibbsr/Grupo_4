@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+
+        header h1 {
+            font-family: 'Cambria', serif;
+            margin: 0;
+            padding: 0;
+            margin-left: 10px;
+            font-size: 24px;
+            line-height: 1;
+        }
+
+        .icone-menu {
+            cursor: pointer;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: -250px; 
+            background-color: #333;
+            padding-top: 60px;
+            transition: left 0.3s ease;
+        }
+
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        .sidebar.ativo {
+            left: 0; /* Mostra a barra lateral */
+        }
+
+        .content {
+            margin-left: 0;
+            padding: 20px;
+            transition: margin-left 0.3s ease;
+        }
+
+        .content.ativo {
+            margin-left: 250px; /* Desloca o conteúdo quando a barra lateral é aberta */
+        }
+
+        .fechar-sidebar {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .icone-side{
+            display: flex; 
+    align-items: center; 
+    text-decoration: none; 
+    color: white; 
+    padding: 10px 15px; 
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="icone-menu" onclick="barralateral()">
+            <img src="Img/3barras.png"width="75" alt="Menu">
+        </div>
+        <h1>LOGO</h1>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+        <span class="fechar-sidebar" onclick="barralateral()">&times;</span> <!-- Botão de fechar -->
+        <a href="Configuracoes.html">
+            <img src="Img/Config.png"width="120" alt="Configurações">
+            <span>Configurações</span>
+        </a>
+        
+
+    </div>
+
+
+    <div class="content" id="content">
+        <p>Conteúdo principal da página.</p>
+    </div>
+
+    <script>
+        function barralateral() {
+            const barra = document.getElementById('sidebar');
+            const content = document.getElementById('content');
+            barra.classList.toggle('ativo');
+            content.classList.toggle('ativo');
+        }
+    </script>
+</body>
+</html>

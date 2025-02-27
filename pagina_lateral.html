@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+    <style>body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: #f0f0f0;
+    }
+    
+    .menu-icon {
+        font-size: 24px;
+        cursor: pointer;
+        margin-right: 15px;
+    }
+    
+    .sidebar {
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: -250px;
+        background-color: #333;
+        padding-top: 60px;
+        transition: left 0.3s ease;
+    }
+    
+    .sidebar a {
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        display: block;
+        transition: background-color 0.3s ease;
+    }
+    
+    .sidebar a:hover {
+        background-color: #575757;
+    }
+    
+    .content {
+        margin-left: 0;
+        padding: 20px;
+        transition: margin-left 0.3s ease;
+    }
+    
+    .sidebar.active {
+        left: 0;
+    }
+    
+    .content.active {
+        margin-left: 250px;
+    }</style>
+
+    <script>function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const content = document.getElementById('content');
+        sidebar.classList.toggle('active');
+        content.classList.toggle('active');
+    }</script>
+<body>
+    <header>
+        <div class="menu-icon" onclick="toggleSidebar()">
+            &#9776; <!-- Ícone de hambúrguer -->
+        </div>
+        <h1>Minha Página</h1>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Serviços</a>
+        <a href="#">Contato</a>
+    </div>
+
+    <div class="content" id="content">
+        <p>Conteúdo principal da página.</p>
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
