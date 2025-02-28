@@ -22,8 +22,8 @@
             font-family: 'Cambria', serif;
             margin: 0;
             padding: 0;
-            margin-left: 10px;
-            font-size: 24px;
+            margin-left: 700px;
+            font-size: 80px;
             line-height: 1;
         }
 
@@ -56,7 +56,7 @@
         }
 
         .sidebar.ativo {
-            left: 0; /* Mostra a barra lateral */
+            left: 0; 
         }
 
         .content {
@@ -66,7 +66,7 @@
         }
 
         .content.ativo {
-            margin-left: 250px; /* Desloca o conteúdo quando a barra lateral é aberta */
+            margin-left: 250px; 
         }
 
         .fechar-sidebar {
@@ -87,6 +87,8 @@
         }
 
 
+
+
     </style>
 </head>
 <body>
@@ -95,21 +97,22 @@
             <img src="Img/3barras.png"width="75" alt="Menu">
         </div>
         <h1>LOGO</h1>
+        <a class="conta" hred="naoimp.html"><img src="Img/conta.png" width="80px"></a>
     </header>
 
     <div class="sidebar" id="sidebar">
-        <span class="fechar-sidebar" onclick="barralateral()">&times;</span> <!-- Botão de fechar -->
-        <a href="Configuracoes.html">
+        <span class="fechar-sidebar" onclick="barralateral()">&times;</span> 
+        <a href="naoimp.html">
             <img src="Img/Config.png"width="120" alt="Configurações">
             <span>Configurações</span>
         </a>
         
-
+        
     </div>
 
 
     <div class="content" id="content">
-        <p>Conteúdo principal da página.</p>
+        <p>Caixa de texto.</p>
     </div>
 
     <script>
