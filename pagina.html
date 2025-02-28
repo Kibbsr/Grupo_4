@@ -13,7 +13,6 @@
 
         header {
             display: flex;
-            align-items: center;
             padding: 10px;
             background-color: #f0f0f0;
         }
@@ -21,12 +20,9 @@
         header h1 {
             font-family: 'Cambria', serif;
             margin: 0;
-            padding: 0;
             margin-left: 700px;
             font-size: 80px;
-            line-height: 1;
         }
-
         .icone-menu {
             cursor: pointer;
         }
@@ -59,36 +55,31 @@
             left:0px; 
         }
 
-        .content {
-            margin-left: 0;
-            padding: 20px;
-            transition: margin-left 0.3s ease;
-        }
-
-        .content.ativo {
-            margin-left: 250px; 
-        }
 
         .fechar-sidebar {
-            position: absolute;
-            top: 10px;
-            right: 10px;
             font-size: 34px;
             color: white;
             cursor: pointer;
         }
-        .icone-menu.ativo {
 
-            right: 75px;
-        }
         header a{
             cursor: pointer;
             margin-left: 700px;
 
-
+        }
+        footer{
+            bottom: 0;
+            position:fixed;
+           align-items: center;
 
         }
 
+        button{
+            cursor: pointer;
+
+        }
+ 
+        
 
 
 
@@ -97,40 +88,75 @@
 <body>
     <header>
 
-        <div class="icone-menu" onclick="barralateral()">
-            <img src="Img/3barras.png"width="75" alt="Menu">
-        </div>
+        <button type="menu" onclick="barralateral()">
+            <img src="Img/3barras.png" width="80px" alt="Menu"></button>
 
         <h1>LOGO</h1>
 
         <a href="naoimp.html">
             <img src="Img/conta.png" width="80px" alt="Conta">
         </a>
-        
     </header>
 
-    <div class="sidebar" id="sidebar">
-        <span class="fechar-sidebar" onclick="barralateral()">&times;</span> 
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime obcaecati recusandae dolorum iusto totam amet harum, expedita fugiat? </p>
+            
+            <label>Pesquisar:
+                <textarea></textarea>
+
+
+    </main>
+
+   
+
+
+
+
+
+
+    <footer>
+
+            <notf><a href="naoimp.html">
+                <img src="Img/notificacao.png" width="100px" alt="Notificações">
+            </a></notf>
+
+            <hist><a href="naoimp.html">
+                <img src="Img/historico.png" width="100px" alt="Histórico">
+            </a></hist>
+
+            <seg>
+                <a href="naoimp.html">
+                    <img src="Img/seg.jpg" width="100px" alt="Segurança Digital">
+                </a>
+            </seg>
+
+
+    </footer>
+
+
+
+
+    <barral class="sidebar" id="sidebar">
+        <fecha class="fechar-sidebar" onclick="barralateral()">&times;</fecha> 
+        
         <a href="naoimp.html">
             <img src="Img/Config.png"width="120" alt="Configurações">
             <span>Configurações</span>
-        </a>
-        
-        
-    </div>
-
-
-    <div class="content" id="content">
-        <p>Caixa de texto.</p>
-    </div>
+        </a>     
+    </barral>
 
     <script>
         function barralateral() {
             const barra = document.getElementById('sidebar');
-            const content = document.getElementById('content');
+            const conteudo = document.getElementById('conteudo');
             barra.classList.toggle('ativo');
-            content.classList.toggle('ativo');
+            conteudo.classList.toggle('ativo');
         }
     </script>
+
+
+
+
 </body>
 </html>
