@@ -56,7 +56,7 @@
         }
 
         .sidebar.ativo {
-            left: 0; 
+            left:0px; 
         }
 
         .content {
@@ -73,17 +73,20 @@
             position: absolute;
             top: 10px;
             right: 10px;
-            font-size: 24px;
+            font-size: 34px;
             color: white;
             cursor: pointer;
         }
+        .icone-menu.ativo {
 
-        .icone-side{
-            display: flex; 
-    align-items: center; 
-    text-decoration: none; 
-    color: white; 
-    padding: 10px 15px; 
+            right: 75px;
+        }
+        header a{
+            cursor: pointer;
+            margin-left: 700px;
+
+
+
         }
 
 
@@ -93,11 +96,17 @@
 </head>
 <body>
     <header>
+
         <div class="icone-menu" onclick="barralateral()">
             <img src="Img/3barras.png"width="75" alt="Menu">
         </div>
+
         <h1>LOGO</h1>
-        <a class="conta" hred="naoimp.html"><img src="Img/conta.png" width="80px"></a>
+
+        <a hred="naoimp.html">
+            <img src="Img/conta.png" width="80px">
+        </a>
+        
     </header>
 
     <div class="sidebar" id="sidebar">
