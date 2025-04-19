@@ -1,0 +1,130 @@
+.Logo {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: auto; 
+    background-color: #D9C8A9;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.linha1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: end;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.nav-item {
+    display: flex;
+
+    align-items: center;
+    gap: 0;
+    width: 100%;
+}
+
+.nav-text{
+    text-align: center;
+    font-size: x-large;
+}
+.botaoenter {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFAF2;
+    min-height: 100vh;
+    margin: 0; 
+}
+
+footer {
+    width: 100%;
+    padding: 10px;
+    background-color: #D9C8A9;
+    margin-top: auto; 
+}
+
+
+.botaohome {
+    display: flex;
+    justify-content: flex-start;
+    
+    margin-bottom: 20px;
+}
+
+.pesqres {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.alinhar_esquerda {
+    text-align: left;
+    width: 100%;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.apuracao {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.porcentagem{
+    margin-left: 10px;
+    border-radius: 5%;
+    border-style: solid;
+}
+
+#verdadeiro{
+    border-color: chartreuse;
+}
+
+#falso {
+    border-color: red;
+}
+
+#inc {
+    border-color: yellow;
+
+
+}
