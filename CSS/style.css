@@ -36,7 +36,17 @@ header.fix {
 main {
     flex: 1;
     overflow-y:auto;
-    padding: 130px 20px 130px; 
+    padding: 5px 5px 130px; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main#caixa-inicial{
+    flex: 1;
+    overflow-y:auto;
+    padding-top: 130px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -337,9 +347,10 @@ span{
 .voltar{
     display: flex;
     justify-content: start;
-    border-radius: 20px;
+    width: 100%;
+    background-color:transparent;
 }
 
 #botaovoltar{
-    background: none;
+    background: transparent;
 }
