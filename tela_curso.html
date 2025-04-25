@@ -9,14 +9,16 @@
 </head>
 <body>
     <header>
-        <input type="checkbox" id="trocar-menu" hidden>
-        <label for="trocar-menu" class="menu">
-            <img src="Img/cardapio.png" width="80" alt="menu">
-        </label>
-        <div class="card">[Menu de opções]</div>
-
-        <h1 class="Logo">LOGO</h1>
-        <a href="naoimp.html"><img src="Img/conta.png" alt="conta" width="90"></a>
+        <button class="menu" onclick="abrir()"> <img src="Img/cardapio.png" alt="menu" width="80"></button>
+        <div id="menuLateral" class="menu-lateral hidden">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <button onclick="fechar()">✕</button>
+        </div>
+        <h1 class="Logo">Logo</h1>
+        <a class="menu" href="naoimp.html"><img src="Img/conta.png" alt="conta" width="80"></a>
+        <script src="js/script.js"></script>
     </header>
     <main>
         <h1 class="sectitulo">Como se proteger?</h1>

@@ -297,20 +297,40 @@ span{
     cursor: pointer;
 }
 
-.card {
-    display: none;
-    position: absolute;
-    top: 90px;
-    left: 10px;
-    width: 150px;
-    height: 70%;
-    background-color: #FFFAF2;
-    border: 1px solid #ccc;
-    padding: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 999;
+.menu-lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    background: #f0f0f0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transform: translateX(-100%); /* Esconde inicialmente */
+    transition: transform 0.3s ease; /* Animação suave */
 }
 
-#trocar-menu:checked + label + .card {
-    display: block;
+/* Quando o menu estiver aberto */
+.menu-lateral.aberto {
+    transform: translateX(0); /* Mostra o menu */
+}
+
+.menu-lateral button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.botaolateral{
+    width: 80px;
+    margin-left: 20px;
+
 }
