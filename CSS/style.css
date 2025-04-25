@@ -1,121 +1,256 @@
-.Logo {
-    display: flex;
-    justify-content: center;
+
+button {
+    background-color: #D9C8A9;
+    border: none;
+    cursor: pointer;
+    outline: none;
 }
-
-
 
 .menu {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    width: 85px;
+    height: 85px;
 }
+
+html, body {
+    overflow: hidden; 
+  }
+  
+
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 10px;
+    height: 90px;
     margin-bottom: auto; 
     background-color: #D9C8A9;
 }
 
+header.fix {       
+    position: fixed;
+    z-index: 1000; 
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
 main {
+    flex: 1;
+    overflow-y:auto;
+    padding: 130px 20px 130px; 
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+    align-items: center;
+}
+
+ul{
+    background-color: #D9C8A9;
+    border-radius: 35px;
+    padding-bottom: 15px;
+    padding-right: 0;
 }
 
 section {
     display: flex;
     justify-content: center;
-    width: 100%;
+    
 }
-
 .linha1 {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: space-evenly;
+    width: 85%;
+    flex-wrap: nowrap;
 }
 
 nav {
     display: flex;
     align-items: end;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 100%;
 }
 
-.nav-item {
-    display: flex;
-
-    align-items: center;
-    gap: 0;
-    width: 100%;
+nav a {
+    width: 80px;
+    height: 80px;
+    margin-top: 3px;
 }
 
-.nav-text{
-    text-align: center;
-    font-size: x-large;
-}
-.botaoenter {
+.areapesq {
     display: flex;
     flex-wrap: nowrap;
+    margin-top: 10px;
 }
 
 body {
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    margin: 0;
     background-color: #FFFAF2;
-    min-height: 100vh;
-    margin: 0; 
 }
+
 
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    padding: 10px;
+    height: 90px;
     background-color: #D9C8A9;
-    margin-top: auto; 
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
+
+
+footer.fix {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    z-index: 1000; 
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+.botaoanexo {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
 
 .botaohome {
     display: flex;
     justify-content: flex-start;
-    
-    margin-bottom: 20px;
 }
 
 .pesqres {
-    font-size: 24px;
+    font-size: 30px;
     margin: 0;
     padding: 0;
 }
 
-.alinhar_esquerda {
-    text-align: left;
+.alinhar {
     width: 100%;
-    margin: 20px 0;
+    font-size: 40px;
+    margin-left: 20px;
     padding: 0;
 }
+
+.sectitulo{
+    text-decoration: underline;
+}
+
+.sectext{
+    font-size: 20px;   
+}
+
+
+.container-topicos {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+
+.topico {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 30px;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 1%;
+    color: black;
+    margin-bottom:15px;
+    text-decoration: none
+}
+
+
+
+.topico1{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    margin-left: 10px;
+    
+}
+
+.topico2{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin-right: 10px;
+    color: black;
+}   
 
 .apuracao {
     display: flex;
     flex-direction: column;
-
+    width: 100%;
+    max-width: 95%;
 }
 
-.porcentagem{
+.taxas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e6e6e6;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.denuncia{
+    display: flex;
+    justify-self: center;
+}
+
+.botaodenuncia{
+    text-justify: end;
+    display: flex;
+    align-items: center;
+    background-color: #e6e6e6;
+    border-radius: 30px;
+    padding: 10px 120px 10px 20px;
+    text-decoration: none;
+}
+
+.denuncia-text{
+    font-size: 24px;
+    text-align: center;
+    color: black;
+}
+
+.icone {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.nav-text {
+    flex-grow: 1;
+    margin: 0 15px;
+    text-align: left;
+}
+
+.porcentagem {
     margin-left: 10px;
-    border-radius: 5%;
+    border-radius: 1000px;
     border-style: solid;
+    padding: 5px 10px;
+    min-width: 50px;
+    text-align: center;
+    flex-shrink: 0;
 }
 
-#verdadeiro{
+#verdadeiro {
     border-color: chartreuse;
 }
 
@@ -125,6 +260,57 @@ footer {
 
 #inc {
     border-color: yellow;
+}
 
+.porcentagem#verdadeiro{
+    background-color: rgba(16,225,44)
+}
+.porcentagem#falso{
+    background-color:rgba(217,67,13)
+}
+.porcentagem#inc{
+    background-color: rgba(255,214,66)
+}
 
+span{
+    font-size: 20px;
+
+}
+
+.videos{
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+    flex-wrap: wrap; 
+    justify-content: center;
+
+}
+
+.videos img:first-child{
+    max-width: 50%;
+    height: auto;
+}
+
+.videos img:last-child{
+    max-width: 15%;
+    height: auto;
+    cursor: pointer;
+}
+
+.card {
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: 10px;
+    width: 150px;
+    height: 70%;
+    background-color: #FFFAF2;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+#trocar-menu:checked + label + .card {
+    display: block;
 }
