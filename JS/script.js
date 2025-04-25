@@ -7,3 +7,7 @@ function fechar() {
     const menu = document.getElementById("menuLateral");
     menu.classList.remove("aberto"); 
 }
+
+function voltar() {
+    window.history.back();
+}

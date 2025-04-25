@@ -332,5 +332,14 @@ span{
 .botaolateral{
     width: 80px;
     margin-left: 20px;
+}
 
+.voltar{
+    display: flex;
+    justify-content: start;
+    border-radius: 20px;
+}
+
+#botaovoltar{
+    background: none;
 }
