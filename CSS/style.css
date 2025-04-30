@@ -223,7 +223,6 @@ footer.fix {
 }
 
 .botaodenuncia {
-    text-justify: end;
     display: flex;
     align-items: center;
     background-color: #e6e6e6;
@@ -320,20 +319,15 @@ span {
     left: 0;
     width: 250px;
     height: 100vh;
-    /* Ocupa toda a altura da tela */
     background: #f0f0f0;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     transform: translateX(-100%);
-    /* Esconde inicialmente */
     transition: transform 0.3s ease;
-    /* Animação suave */
 }
 
-/* Quando o menu estiver aberto */
 .menu-lateral.aberto {
     transform: translateX(0);
-    /* Mostra o menu */
 }
 
 .menu-lateral button {
