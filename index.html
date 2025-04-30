@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="reset" href="CSS/reset.css">
+    <script src="js/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Inicial</title>
 </head>
+
 <body>
 
-
     <header>
-        <button class="menu" onclick="abrir()"> <img src="Img/cardapio.png" alt="menu" width="80"></button>
+        <button class="abrir-menu"> <img src="Img/cardapio.png" alt="menu" width="80"></button>
         <div id="menuLateral" class="menu-lateral hidden">
             <a href="naoimp.html"><img class="botaolateral" src="Img/toque.png" alt="Notificações"></a>
             <a href="naoimp.html"><img class="botaolateral" src="Img/Config.png" alt="Configurações"></a>
             <a href="naoimp.html"><img class="botaolateral" src="Img/incerto.png" alt="Atendimento"></a>
-            <button onclick="fechar()">✕</button>
+            <button class="fechar-menu">✕</button>
         </div>
         <h1 class="Logo">Logo</h1>
         <a class="menu" href="naoimp.html"><img src="Img/conta.png" alt="conta" width="80"></a>
-        <script src="js/script.js"></script>
     </header>
 
     <main id="caixa-inicial">
         <section>
             <ul class="caixa-pesquisa">
-                <li class="linha1">    
+                <li class="linha1">
                     <h2>
                         O que deseja checar?
                     </h2>
-                    <a class = "botaoanexo" href="tela_anexo.html"><img src="Img/anexar.png" alt="Anexar" width="40"></a>
+                    <a class="botaoanexo" href="tela_anexo.html"><img src="Img/anexar.png" alt="Anexar" width="40"></a>
                 </li>
-                <li  class="areapesq" >
-                    <textarea rows="4" cols="30"></textarea> <a href="Resultado-Pesquisa.html"><img src="Img/enter.png" alt="Ir" width="110"></a>               
+                <li class="areapesq">
+                    <textarea rows="4" cols="30"></textarea> <a href="Resultado-Pesquisa.html"><img src="Img/enter.png"
+                            alt="Ir" width="110"></a>
                 </li>
             </ul>
 
@@ -51,4 +53,5 @@
 
 
 </body>
+
 </html>

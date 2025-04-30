@@ -1,4 +1,3 @@
-
 button {
     background-color: #D9C8A9;
     border: none;
@@ -6,15 +5,16 @@ button {
     outline: none;
 }
 
-.menu {
+.abrir-menu {
     width: 85px;
     height: 85px;
 }
 
-html, body {
-    overflow: hidden; 
-  }
-  
+html,
+body {
+    overflow: hidden;
+}
+
 
 
 header {
@@ -23,29 +23,29 @@ header {
     align-items: center;
     width: 100%;
     height: 90px;
-    margin-bottom: auto; 
+    margin-bottom: auto;
     background-color: #D9C8A9;
 }
 
-header.fix {       
+header.fix {
     position: fixed;
-    z-index: 1000; 
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 main {
     flex: 1;
-    overflow-y:auto;
-    padding: 5px 5px 130px; 
+    overflow-y: auto;
+    padding: 5px 5px 130px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-main#caixa-inicial{
+main#caixa-inicial {
     flex: 1;
-    overflow-y:auto;
+    overflow-y: auto;
     padding-top: 130px;
     box-sizing: border-box;
     display: flex;
@@ -53,7 +53,7 @@ main#caixa-inicial{
     align-items: center;
 }
 
-ul{
+ul {
     background-color: #D9C8A9;
     border-radius: 35px;
     padding-bottom: 15px;
@@ -63,8 +63,9 @@ ul{
 section {
     display: flex;
     justify-content: center;
-    
+
 }
+
 .linha1 {
     display: flex;
     justify-content: space-evenly;
@@ -120,8 +121,8 @@ footer.fix {
     position: fixed;
     bottom: 0px;
     left: 0;
-    z-index: 1000; 
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .botaoanexo {
@@ -149,18 +150,18 @@ footer.fix {
     padding: 0;
 }
 
-.sectitulo{
+.sectitulo {
     text-decoration: underline;
 }
 
-.sectext{
-    font-size: 20px;   
+.sectext {
+    font-size: 20px;
 }
 
 
 .container-topicos {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 }
 
@@ -176,27 +177,27 @@ footer.fix {
     background-color: #f5f5f5;
     padding: 1%;
     color: black;
-    margin-bottom:15px;
+    margin-bottom: 15px;
     text-decoration: none
 }
 
 
 
-.topico1{
+.topico1 {
     display: flex;
     justify-content: start;
     width: 100%;
     margin-left: 10px;
-    
+
 }
 
-.topico2{
+.topico2 {
     display: flex;
     justify-content: end;
     width: 100%;
     margin-right: 10px;
     color: black;
-}   
+}
 
 .apuracao {
     display: flex;
@@ -216,12 +217,12 @@ footer.fix {
     width: 100%;
 }
 
-.denuncia{
+.denuncia {
     display: flex;
     justify-self: center;
 }
 
-.botaodenuncia{
+.botaodenuncia {
     text-justify: end;
     display: flex;
     align-items: center;
@@ -231,7 +232,7 @@ footer.fix {
     text-decoration: none;
 }
 
-.denuncia-text{
+.denuncia-text {
     font-size: 24px;
     text-align: center;
     color: black;
@@ -272,36 +273,38 @@ footer.fix {
     border-color: yellow;
 }
 
-.porcentagem#verdadeiro{
-    background-color: rgba(16,225,44)
-}
-.porcentagem#falso{
-    background-color:rgba(217,67,13)
-}
-.porcentagem#inc{
-    background-color: rgba(255,214,66)
+.porcentagem#verdadeiro {
+    background-color: rgba(16, 225, 44)
 }
 
-span{
+.porcentagem#falso {
+    background-color: rgba(217, 67, 13)
+}
+
+.porcentagem#inc {
+    background-color: rgba(255, 214, 66)
+}
+
+span {
     font-size: 20px;
 
 }
 
-.videos{
+.videos {
     display: flex;
-    align-items: center; 
+    align-items: center;
     gap: 20px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
 
 }
 
-.videos img:first-child{
+.videos img:first-child {
     max-width: 50%;
     height: auto;
 }
 
-.videos img:last-child{
+.videos img:last-child {
     max-width: 15%;
     height: auto;
     cursor: pointer;
@@ -312,21 +315,25 @@ span{
     flex-direction: column;
     gap: 30px;
     align-items: start;
-    position: fixed; 
+    position: fixed;
     top: 0;
     left: 0;
     width: 250px;
-    height: 100vh; /* Ocupa toda a altura da tela */
+    height: 100vh;
+    /* Ocupa toda a altura da tela */
     background: #f0f0f0;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    transform: translateX(-100%); /* Esconde inicialmente */
-    transition: transform 0.3s ease; /* Animação suave */
+    transform: translateX(-100%);
+    /* Esconde inicialmente */
+    transition: transform 0.3s ease;
+    /* Animação suave */
 }
 
 /* Quando o menu estiver aberto */
 .menu-lateral.aberto {
-    transform: translateX(0); /* Mostra o menu */
+    transform: translateX(0);
+    /* Mostra o menu */
 }
 
 .menu-lateral button {
@@ -339,18 +346,18 @@ span{
     cursor: pointer;
 }
 
-.botaolateral{
+.botaolateral {
     width: 80px;
     margin-left: 20px;
 }
 
-.voltar{
+.voltar {
     display: flex;
     justify-content: start;
     width: 100%;
-    background-color:transparent;
+    background-color: transparent;
 }
 
-#botaovoltar{
+#botaovoltar {
     background: transparent;
 }
