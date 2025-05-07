@@ -63,7 +63,6 @@ ul {
 section {
     display: flex;
     justify-content: center;
-
 }
 
 .linha1 {
@@ -71,6 +70,14 @@ section {
     justify-content: space-evenly;
     width: 85%;
     flex-wrap: nowrap;
+}
+
+.linha2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 nav {
@@ -355,3 +362,7 @@ span {
 #botaovoltar {
     background: transparent;
 }
+/* 
+a:active{
+    background-color: aqua;
+} */
