@@ -10,6 +10,16 @@ button {
     height: 85px;
 }
 
+footer{
+    border-top:rgba(221, 114, 43, 0.164); 
+    border-style: solid;
+}
+
+/* 
+.logo{
+    width: 100%;
+} */
+
 html,
 body {
     overflow: hidden;
@@ -23,8 +33,9 @@ header {
     align-items: center;
     width: 100%;
     height: 90px;
-    margin-bottom: auto;
     background-color: #D9C8A9;
+    border-bottom:rgba(221, 114, 43, 0.164); 
+    border-style: solid;
 }
 
 header.fix {
