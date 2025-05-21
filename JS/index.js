@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    // Declaração dos botões
+    // Declarando variáveis
     const botaoAbrir = document.querySelector(".abrir-menu");
     const botaoFechar = document.querySelector(".fechar-menu");
     const menuLateral = document.getElementById("menuLateral");

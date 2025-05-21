@@ -15,10 +15,10 @@ footer{
     border-style: solid;
 }
 
-/* 
+
 .logo{
-    width: 100%;
-} */
+    width: 7%;
+}
 
 html,
 body {
@@ -103,8 +103,9 @@ nav {
 nav a {
     width: 80px;
     height: 80px;
-    margin-top: 3px;
 }
+
+
 
 .areapesq {
     display: flex;
@@ -202,22 +203,19 @@ footer.fix {
     text-decoration: none
 }
 
-
+.botao_a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+}
 
 .topico1 {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     width: 100%;
-    margin-left: 10px;
+    
 
-}
-
-.topico2 {
-    display: flex;
-    justify-content: end;
-    width: 100%;
-    margin-right: 10px;
-    color: black;
 }
 
 .apuracao {
@@ -369,7 +367,8 @@ span {
 }
 
 .voltar {
-    display: flex;
+
+    position: absolute;
     justify-content: start;
     width: 100%;
     background-color: transparent;
@@ -378,7 +377,12 @@ span {
 #botaovoltar {
     background: transparent;
 }
+
+h4{
+    margin: 0;
+}
 /* 
 a:active{
-    background-color: aqua;
+    transition: 0.3s ease;
+    width: 90;
 } */
