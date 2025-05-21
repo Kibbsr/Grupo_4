@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     // ARRUMAR O BOTAO IR PARA FUNCIONAR SOMENTE QUANDO HOUVER UM ARQUIVO ANEXADO
     botaoIr.addEventListener("click", function () {
-        localStorage.setItem("pesquisa", getElementById('pesquisa'))
+        localStorage.setItem("imagem", getElementById('img_peq'))
         window.location.href = "Resultado-Pesquisa.html"
     })
 });
