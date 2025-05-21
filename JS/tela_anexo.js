@@ -20,10 +20,15 @@ document.addEventListener("DOMContentLoaded", function () {
     botaoVoltar.addEventListener("click", function () {
         window.history.back();
     })
-    
-    // ARRUMAR O BOTAO IR PARA FUNCIONAR SOMENTE QUANDO HOUVER UM ARQUIVO ANEXADO
     botaoIr.addEventListener("click", function () {
-        localStorage.setItem("imagem", getElementById('img_peq'))
-        window.location.href = "Resultado-Pesquisa.html"
+
+        if (document.querySelector('input').value == "") {
+            alert("Nenhum documento anexado!")
+        }
+        else {
+            localStorage.setItem("imagem", document.getElementById('img_peq'))
+            window.location.href = "Resultado-Pesquisa.html"
+        }
     })
+
 });

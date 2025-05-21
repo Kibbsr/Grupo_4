@@ -8,6 +8,11 @@ button {
 .abrir-menu {
     width: 85px;
     height: 85px;
+    background-color: transparent;
+}
+
+.menu{
+    margin-right: 15px;
 }
 
 footer{
@@ -17,7 +22,7 @@ footer{
 
 
 .logo{
-    width: 7%;
+    width: 15vh;
 }
 
 html,
@@ -33,7 +38,7 @@ header {
     align-items: center;
     width: 100%;
     height: 90px;
-    background-color: #D9C8A9;
+    background-color: #BE8342;
     border-bottom:rgba(221, 114, 43, 0.164); 
     border-style: solid;
 }
@@ -65,7 +70,7 @@ main#caixa-inicial {
 }
 
 ul {
-    background-color: #D9C8A9;
+    background-color: #BE8342;
     border-radius: 35px;
     padding-bottom: 15px;
     padding-right: 0;
@@ -118,7 +123,7 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0;
-    background-color: #f5f5f5;
+    background-color: #FFFAF2;
 }
 
 
@@ -127,8 +132,10 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 90px;
-    background-color: #aa8c54;
+    height: 100px;
+    /* background-color: #D9C8A9; */
+    background-color: #BE8342;
+    /* background-color: #8C451C;*/
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -149,7 +156,7 @@ footer.fix {
     width: 40px;
     height: 40px;
     margin-top: 10px;
-    margin-right: 5px;
+    margin-left: 30px;
 }
 
 .botaohome {
@@ -195,7 +202,7 @@ footer.fix {
     border: 2px solid black;
     border-radius: 30px;
     text-align: center;
-    background-color: #FFFAF2;
+    background-color: #D5C8B7;
     padding: 1%;
     box-shadow:10px 10px 10px  rgba(0, 0, 0, 0.258);
     color: black;
@@ -229,7 +236,8 @@ footer.fix {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #FFFAF2;
+    /* background-color: #FFFAF2; */
+    background-color: #D5C8B7;
     margin-bottom: 30px;
     padding: 10px 12px 10px 12px;
     border-radius: 10px;
@@ -237,6 +245,9 @@ footer.fix {
     box-shadow:10px 10px 10px  rgba(0, 0, 0, 0.037);
 }
 
+#botaoir{
+    background-color: transparent;
+}
 
 .denuncia {
     display: flex;
@@ -246,7 +257,7 @@ footer.fix {
 .botaodenuncia {
     display: flex;
     align-items: center;
-    background-color: #FFFAF2;
+    background-color: #D5C8B7;
     border-radius: 30px;
     padding: 10px 120px 10px 20px;
     text-decoration: none;
@@ -367,16 +378,18 @@ span {
     margin-left: 20px;
 }
 
-.voltar {
-    position: absolute;
+.voltar{
+    position: flex;
     justify-content: start;
-    width: 100%;
-    margin-left: 40px;
-    background-color: transparent;
+    height: 7vh;
+    margin-left: 20px;
+    margin-top: 8px;
+    background-color: aquamarine;
 }
 
+
+
 #botaovoltar {
-    
     background: transparent;
 }
 
