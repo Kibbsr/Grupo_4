@@ -378,6 +378,16 @@ span {
     margin-left: 20px;
 }
 
+.botaobarralateral{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+h5{
+    font-size: x-large;
+}
+
 .voltar{
     position: flex;
     justify-content: start;
