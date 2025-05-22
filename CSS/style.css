@@ -389,7 +389,7 @@ h5{
 }
 
 .voltar{
-    position: flex;
+    display: flex;
     justify-content: start;
     height: 7vh;
     margin-left: 20px;
