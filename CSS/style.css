@@ -52,7 +52,7 @@ header.fix {
 main {
     flex: 1;
     overflow-y: auto;
-    padding: 5px 5px 130px;
+    padding: 120px 5px 130px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -390,14 +390,17 @@ h5{
 
 .voltar{
     display: flex;
+    position: fixed;
     justify-content: start;
-    height: 7vh;
-    margin-left: 20px;
+    height: 7vh;    
     margin-top: 8px;
-    background-color: aquamarine;
+    top: 120px;
+    
 }
 
-
+.results{
+    margin-left: 70px;
+}
 
 #botaovoltar {
     background: transparent;
