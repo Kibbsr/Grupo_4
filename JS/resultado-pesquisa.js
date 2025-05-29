@@ -2,10 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // Declarando variáveis
     let botaoAbrir = document.querySelector(".abrir-menu");
     let botaoFechar = document.querySelector(".fechar-menu");
-    let botaoVoltar = document.getElementById("botaovoltar");
+    let botaoVoltar = document.querySelector(".botaovoltar");
     let menuLateral = document.getElementById("menuLateral");
     let pesqres = document.querySelector(".pesqres");
-    let imagem_pesquisa = document.querySelector(".imagem_pesquisa")
+    let imagem_pesquisa = document.querySelector(".imagem_pesquisa");
 
     // Aqui entram as funções que devem ser executadas no instante em que a página é carregado
     pesqres.innerHTML = localStorage.getItem('pesquisa');
