@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     // Declarando variáveis
-    const botaoAbrir = document.querySelector(".abrir-menu");
-    const botaoFechar = document.querySelector(".fechar-menu");
-    const menuLateral = document.getElementById("menuLateral");
-    const botaoIr = document.getElementById("botaoir");
-    const input = document.querySelector('input');
+    let botaoAbrir = document.querySelector(".abrir-menu");
+    let botaoFechar = document.querySelector(".fechar-menu");
+    let menuLateral = document.getElementById("menuLateral");
+    let botaoIr = document.getElementById("botaoir");
+    let input = document.querySelector('input');
 
     // Aqui entram as funções que devem ser executadas no instante em que a página é carregada
 
