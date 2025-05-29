@@ -219,7 +219,10 @@ body {
 .denuncia {
     display: flex;
     justify-self: center;
-    
+}
+
+#vermelho{
+    background-color: rgba(217, 67, 13);
 }
 
 .botaodenuncia {
@@ -227,6 +230,7 @@ body {
     align-items: center;
     background-color: #D5C8B7;
     border-radius: 30px;
+    margin-top: 10px;
     padding: 10px 120px 10px 20px;
     text-decoration: none;
     border: 2px solid black;
