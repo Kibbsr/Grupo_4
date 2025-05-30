@@ -1,22 +1,60 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    // Declarando variáveis
     let botaoAbrir = document.querySelector(".abrir-menu");
     let botaoFechar = document.querySelector(".fechar-menu");
     let menuLateral = document.getElementById("menuLateral");
-    let botaoVoltar = document.getElementById("botaovoltar");
+    let botaoVoltar = document.querySelector(".botaovoltar");
+    let botaoConcluir = document.querySelector(".botaodenuncia");
+    let inputSituacao = document.getElementById("situação");
+    let inputOrigem = document.getElementById("origem");
+    let inputExtra = document.getElementById("Extra");
 
-    // Aqui entram as funções que devem ser executadas no instante em que a página é carregada
 
+    if (botaoAbrir && botaoFechar && menuLateral) {
+        botaoAbrir.addEventListener("click", function () {
+            menuLateral.classList.add("aberto");
+            menuLateral.classList.remove("hidden"); 
+        });
 
-    // Definindo os eventos que os botões fazem acontecer
-    botaoAbrir.addEventListener("click", function () {
-        menuLateral.classList.add("aberto");
+        botaoFechar.addEventListener("click", function () {
+            menuLateral.classList.remove("aberto");
+            menuLateral.classList.add("hidden");
+        });
+    }
+
+    // Botão voltar
+    if (botaoVoltar) {
+        botaoVoltar.addEventListener("click", function () {
+            window.history.back();
+        });
+    }
+
+    // Botão concluir
+    if (botaoConcluir) {
+        botaoConcluir.addEventListener("click", function () {
+            if (
+                inputSituacao.value.trim() === "" ||
+                inputOrigem.value.trim() === ""
+            ) {
+                alert("Preencha os campos obrigatórios (descrição e origem)!");
+            } else {
+                window.location.href = "naoimp.html";
+            }
+        });
+    }
+
+    let inputs = document.querySelectorAll("input");
+    inputs.forEach(function (input) {
+        input.addEventListener("keypress", function (event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                botaoConcluir.click();
+            }
+        });
     });
-    botaoFechar.addEventListener("click", function () {
-        menuLateral.classList.remove("aberto");
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && menuLateral.classList.contains("aberto")) {
+            menuLateral.classList.remove("aberto");
+        }
     });
-    botaoVoltar.addEventListener("click", function () {
-        window.history.back();
-    })
 });

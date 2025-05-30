@@ -121,7 +121,12 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0;
-    background-color: #FFFAF2;
+    /* background-color: #FFFAF2; */
+
+    background-image: url('../Img/plano-de-fundo-texturizado-de-concreto-vinheta-amarelo-pastel.jpg');
+    background-repeat: no-repeat;          
+    background-size: cover;                
+    background-position: center center;    
 }
 
 
@@ -222,16 +227,17 @@ body {
 }
 
 #vermelho{
-    background-color: rgba(217, 67, 13);
+    background-color: rgba(217, 67, 13, 0.844);
 }
 
 .botaodenuncia {
     display: flex;
     align-items: center;
-    background-color: #D5C8B7;
+    /* background-color: #D5C8B7; */
+    background-color: rgba(217, 67, 13, 0.844);
     border-radius: 30px;
     margin-top: 10px;
-    padding: 10px 120px 10px 20px;
+    padding: 5px 90px 5px 10px;
     text-decoration: none;
     border: 2px solid black;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.258);
@@ -279,15 +285,15 @@ body {
 }
 
 .porcentagem#verdadeiro {
-    background-color: rgba(16, 225, 44)
+    background-color: rgba(16, 225, 44, 0.844);
 }
 
 .porcentagem#falso {
-    background-color: rgba(217, 67, 13)
+    background-color: rgba(217, 67, 13, 0.844);
 }
 
 .porcentagem#inc {
-    background-color: rgba(255, 214, 66)
+    background-color: rgba(255, 214, 66, 0.844);
 }
 
 span.menu-titulo {
@@ -323,7 +329,7 @@ span{
 .menu-lateral {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 35px;
     align-items: flex-start;
     position: fixed;
     top: 0;
@@ -425,6 +431,11 @@ a:hover {
     z-index: 10;
 }
 
+button.botaodenuncia:hover{
+    transform: scale(1.07);
+    transition: transform 0.3s ease;
+    z-index: 10;
+}
 a.botaodenuncia:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;

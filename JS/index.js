@@ -7,17 +7,15 @@ document.addEventListener("DOMContentLoaded", function () {
     let botaoIr = document.getElementById("botaoir");
     let input = document.querySelector('input');
 
-    // Aqui entram as funções que devem ser executadas no instante em que a página é carregada
-
-
     
-    // Definindo os eventos que os botões fazem acontecer
     botaoAbrir.addEventListener("click", function () {
         menuLateral.classList.add("aberto");
     })
+
     botaoFechar.addEventListener("click", function () {
         menuLateral.classList.remove("aberto")
     })
+
     botaoIr.addEventListener("click", function () {
 
         if (document.querySelector('input').value == "") {
@@ -28,10 +26,18 @@ document.addEventListener("DOMContentLoaded", function () {
             window.location.href = "Resultado-Pesquisa.html"
         }
     })
+
     input.addEventListener("keypress", function (event) {
         if (event.key === "Enter") {
             event.preventDefault();
             document.querySelector("#botaoir").click();
         }
     })
+
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && menuLateral.classList.contains("aberto")) {
+            menuLateral.classList.remove("aberto");
+        }
+    });
+
 })

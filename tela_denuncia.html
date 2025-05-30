@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="CSS/style.css">
-  <link rel="reset" href="CSS/reset.css">
   <script src="js/tela_denuncia.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="Img/logo.png">
@@ -27,20 +26,20 @@
                 <span class="menu-titulo">Configurações</span>
             </a>
             <a href="naoimp.html" class="menu-item">
-                <img class="botaolateral" src="Img/incerto.png" alt="Atendimento">
+                <img class="botaolateral" src="Img/historia.png" alt="Atendimento">
+                <span class="menu-titulo">Histórico</span>
+            </a>
+            <a href="naoimp.html" class="menu-item">
+                <img class="botaolateral" src="Img/atendimento-ao-cliente.png" alt="Atendimento">
                 <span class="menu-titulo">Atendimento</span>
             </a>
             <a href="naoimp.html" class="menu-item">
-                <img class="botaolateral" src="Img/incerto.png" alt="Atendimento">
-                <span class="menu-titulo">Atendimento</span>
+                <img class="botaolateral" src="Img/em-formacao.png" alt="Atendimento">
+                <span class="menu-titulo">Como Funciona</span>
             </a>
             <a href="naoimp.html" class="menu-item">
-                <img class="botaolateral" src="Img/incerto.png" alt="Atendimento">
-                <span class="menu-titulo">Atendimento</span>
-            </a>
-            <a href="naoimp.html" class="menu-item">
-                <img class="botaolateral" src="Img/incerto.png" alt="Atendimento">
-                <span class="menu-titulo">Atendimento</span>
+                <img class="botaolateral" src="Img/termos-e-condicoes.png" alt="Atendimento">
+                <span class="menu-titulo">Termos de Uso</span>
             </a>
 
         </div>
@@ -50,8 +49,7 @@
     </header>
 
 
-  <!-- principal  -->
-  <main style="overflow-y: auto; display: flex; flex-direction: column; align-items: center; padding: 1rem;">
+  <main>
     <nav class="voltar">
       <button class="botaovoltar"><img src="Img/voltar.png" width="40" alt="Voltar"></button>
     </nav>
@@ -59,9 +57,9 @@
     <h1 style="font-size: 1.5rem; margin: 1rem 0;">Denuncie aqui!</h1>
     <div class="formulario-denuncia"
       style="width: 100%; max-width: 300px; display: flex; flex-direction: column; gap: 1rem;">
-      <textarea class="campo" placeholder="Descreva a situação..." style="height: 80px;"></textarea>
-      <textarea class="campo" placeholder="Informe o link ou origem..." style="height: 60px;"></textarea>
-      <textarea class="campo" placeholder="Outras informações relevantes..." style="height: 60px;"></textarea>
+      <input type="text" class="campo" id="situação" placeholder="Descreva a situação..." style="height: 80px;"></input>
+      <input type="text" class="campo" id="origem" placeholder="Informe o link ou origem..." style="height: 60px;"></input>
+      <input type="text" class="campo" id="Extra" placeholder="Outras informações relevantes..." style="height: 60px;"></input>
     </div>
 
     <div class="conclusão">

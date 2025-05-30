@@ -19,4 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
     botaoVoltar.addEventListener("click", function () {
         window.history.back();
     })
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && menuLateral.classList.contains("aberto")) {
+            menuLateral.classList.remove("aberto");
+        }
+    });
 });

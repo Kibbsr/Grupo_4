@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let botaoAbrir = document.querySelector(".abrir-menu");
     let botaoFechar = document.querySelector(".fechar-menu");
     let menuLateral = document.getElementById("menuLateral");
-    let botaoVoltar = document.getElementById("botaovoltar");
+    let botaoVoltar = document.querySelector(".botaovoltar");
 
     // Aqui entram as funções que devem ser executadas no instante em que a página é carregada
 
@@ -19,4 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
     botaoVoltar.addEventListener("click", function () {
         window.history.back();
     })
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && menuLateral.classList.contains("aberto")) {
+            menuLateral.classList.remove("aberto");
+        }
+    });
 });
