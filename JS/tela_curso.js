@@ -24,4 +24,27 @@ document.addEventListener("DOMContentLoaded", function () {
             menuLateral.classList.remove("aberto");
         }
     });
+
+    troca_imagem_conclusao();
 });
+
+
+
+
+
+
+
+
+function troca_imagem_conclusao() {
+    let imagensConclusao = document.querySelectorAll(".videos img[title='Conclusão de vídeo']");
+    
+    imagensConclusao.forEach(function(imagem) {
+        imagem.addEventListener("click", function() {
+            if (imagem.src.endsWith("checkbox.png")) {
+                imagem.src = "Img/caixa-curso.png";
+            } else {
+                imagem.src = "Img/checkbox.png";
+            }
+        });
+    });
+}
