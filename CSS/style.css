@@ -163,6 +163,11 @@ body {
     font-size: 18px;
 }
 
+.coluna-videos{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
 .topico {
     display: flex;
@@ -310,7 +315,6 @@ span{
     display: flex;
     align-items: center;
     gap: 20px;
-    flex-wrap: wrap;
     justify-content: center;
 
 }
