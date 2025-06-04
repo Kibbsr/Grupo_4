@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    
+
     // Declarando variáveis
     let botaoAbrir = document.querySelector(".abrir-menu");
     let botaoFechar = document.querySelector(".fechar-menu");
@@ -26,25 +26,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     troca_imagem_conclusao();
-});
 
+    function troca_imagem_conclusao() {
+        let imagensConclusao = document.querySelectorAll(".videos img[title='Conclusão de vídeo']");
 
-
-
-
-
-
-
-function troca_imagem_conclusao() {
-    let imagensConclusao = document.querySelectorAll(".videos img[title='Conclusão de vídeo']");
-    
-    imagensConclusao.forEach(function(imagem) {
-        imagem.addEventListener("click", function() {
-            if (imagem.src.endsWith("checkbox.png")) {
-                imagem.src = "Img/caixa-curso.png";
-            } else {
-                imagem.src = "Img/checkbox.png";
-            }
+        imagensConclusao.forEach(function (imagem) {
+            imagem.addEventListener("click", function () {
+                if (imagem.src.endsWith("checkbox.png")) {
+                    imagem.src = "Img/caixa-curso.png";
+                } else {
+                    imagem.src = "Img/checkbox.png";
+                }
+            });
         });
-    });
-}
+    }
+});
