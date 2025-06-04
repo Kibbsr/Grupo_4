@@ -31,17 +31,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Botão concluir
     if (botaoConcluir) {
-        botaoConcluir.addEventListener("click", function () {
-            if (
-                inputSituacao.value.trim() === "" ||
-                inputOrigem.value.trim() === ""
-            ) {
-                alert("Preencha os campos obrigatórios (descrição e origem)!");
-            } else {
-                window.location.href = "tela_pós_denuncia.html";
-            }
-        });
-    }
+    botaoConcluir.addEventListener("click", function () {
+      if (
+        inputSituacao.value.trim() === "" ||
+        inputOrigem.value.trim() === ""
+      ) {
+        alert("Preencha os campos obrigatórios (descrição e origem)!");
+      } else {
+        // Salva no localStorage
+        localStorage.setItem("situacao", inputSituacao.value.trim());
+        localStorage.setItem("origem", inputOrigem.value.trim());
+        localStorage.setItem("Extra", inputExtra.value.trim());
+
+        // Redireciona para a página de conclusão
+        window.location.href = "tela_conclusao.html";
+      }
+    });
+  }
+
 
     let inputs = document.querySelectorAll("input");
     inputs.forEach(function (input) {
