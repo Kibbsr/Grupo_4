@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
             ) {
                 alert("Preencha os campos obrigatórios (descrição e origem)!");
             } else {
-                window.location.href = "naoimp.html";
+                window.location.href = "tela_pós_denuncia.html";
             }
         });
     }
